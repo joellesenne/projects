@@ -34,7 +34,7 @@ export default {
   },
   methods: {
     filterProjects (projects) {
-      const projectNames = ['portfolio', 'blog', 'lab', 'cv-resume', 'photos']
+      const projectNames = ['portfolio', 'projects', 'blog', 'lab', 'cv-resume', 'photos']
       return projects.filter(project => projectNames.includes(project.name))
     }
   }

@@ -1,6 +1,6 @@
 <template>
   <div class="item">
-    <h2 class="title">{{ title }}</h2>
+    <h2 class="title green">{{ title }}</h2>
     <p class="description">{{ description }}</p>
     <div class="tags">
       <span v-for="(tag, index) in tags" :key="index" class="tag">{{ tag }}</span>
@@ -36,7 +36,6 @@ export default {
 }
 
 .title {
-  color: #008000;
   margin-bottom: 0.5rem;
 }
 
