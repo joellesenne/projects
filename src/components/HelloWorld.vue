@@ -3,6 +3,7 @@
     <h1 class="green">{{ msg }}</h1>
     <h3>
       A concentrate of projects carried out on
+      <br>
       <a href="https://github.com/joellesenne" target="_blank" rel="noopener">Github</a> for
       <a href="https://joellesenne.dev/" target="_blank" rel="noopener">Joellesenne</a>.
     </h3>
@@ -24,13 +25,14 @@ export default defineComponent({
 
 <style scoped>
 .greetings {
-  margin-bottom: 1rem;
+  width: 100%;
   text-align: center;
 }
 
 @media (min-width: 1024px) {
   .greetings {
-    margin-bottom: 0;
+    position: fixed;
+    top: 2.5rem;
     text-align: left;
   }
 }

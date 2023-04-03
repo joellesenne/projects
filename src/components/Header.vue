@@ -16,13 +16,11 @@ export default {
   line-height: 1.5;
    display: flex;
    place-items: center;
-   padding-right: calc(var(--section-gap) / 2);
  }
 
 @media (min-width: 1024px) {
-  header .header {
+  header {
     display: flex;
-    position: fixed;
     place-items: flex-start;
     flex-wrap: wrap;
   }
