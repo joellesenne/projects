@@ -1,5 +1,3 @@
-Here is a template for an `LICENSE` file that you can use for your GitHub project :
-```vfnet
 MIT License
 
 Copyright (c) 2023 Joël Lesenne <contact@joellesenne.dev>
@@ -21,7 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-```
-
-You should replace `[YEAR]` and `[COPYRIGHT HOLDER'S NAME]` with the appropriate information for your project. If you have multiple copyright holders, list each one separated by a comma.
