@@ -34,7 +34,7 @@ export default {
   },
   methods: {
     filterProjects (projects) {
-      const projectNames = ['portfolio', 'projects', 'blog', 'lab', 'cv-resume', 'photos']
+      const projectNames = ['portfolio', 'projects', 'blog', 'lab', 'cv-resume', 'photos', 'dotfiles', 'joellesenne']
       return projects.filter(project => projectNames.includes(project.name))
     }
   }
@@ -55,7 +55,8 @@ export default {
             :description="project.description"
             :urlLink="project.html_url"
             :tags="project.topics"
-            :homepage="project.homepage">
+            :homepage="project.homepage"
+            :language="project.language">
         </Item>
       </section>
     </article>

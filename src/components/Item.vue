@@ -2,11 +2,12 @@
   <div class="item">
     <h2 class="title green">{{ title }}</h2>
     <p class="description">{{ description }}</p>
+    <p v-if="language">language : {{ language }}</p>
     <div class="tags">
       <span v-for="(tag, index) in tags" :key="index" class="tag">{{ tag }}</span>
     </div>
     <div class="links">
-      <a :href="homepage" target="_blank" rel="noopener noreferrer">Demo</a>
+      <a v-if="homepage" :href="homepage" target="_blank" rel="noopener noreferrer">Demo</a>
       <a :href="urlLink" target="_blank" rel="noopener noreferrer">Source</a>
     </div>
     <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -23,7 +24,8 @@ export default {
     description: String,
     urlLink: String,
     tags: Array,
-    homepage: String
+    homepage: String,
+    language: String
   }
 }
 </script>
