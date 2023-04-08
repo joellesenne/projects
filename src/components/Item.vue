@@ -35,6 +35,15 @@ export default {
   display: flex;
   flex-direction: column;
   position: relative;
+  transform: rotate3d(0, 0, 1, -2deg) translateZ(0) scale(1);
+  transform-origin: left center;
+  transform-style: preserve-3d;
+  will-change: transform;
+  transition: transform 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.item:hover {
+  transform: rotate3d(0, 1, 0, 0deg) translateZ(0) scale(1);
 }
 
 .title {
@@ -71,6 +80,15 @@ export default {
 .links a {
   margin-right: 1rem;
   font-size: 0.9rem;
+  perspective-origin: left center;
+  transform-style: preserve-3d;
+  will-change: transform;
+  transform: rotate3d(0, 0, 0, 0deg) translateZ(0);
+  transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.links a:hover {
+  transform: rotate3d(-.25, 1, 0, -30deg) translateZ(2px) scale(1.1);
 }
 
 .icon {

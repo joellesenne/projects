@@ -34,7 +34,7 @@ export default {
   },
   methods: {
     filterProjects (projects) {
-      const projectNames = ['portfolio', 'projects', 'blog', 'lab', 'cv-resume', 'photos', 'dotfiles', 'joellesenne']
+      const projectNames = ['portfolio', 'projects', 'blog', 'lab', 'cv-resume', 'photos', 'dotfiles', 'joellesenne', '404']
       return projects.filter(project => projectNames.includes(project.name))
     }
   }
@@ -93,6 +93,21 @@ article {
   background-color: #2c3e50;
   border-radius: 0.5rem;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  transform: rotate3d(0, 0, 1, 2deg) translateZ(0) scale(1);
+  transform-origin: right center;
+  transform-style: preserve-3d;
+  will-change: transform;
+  transition: transform 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@media screen and (max-width: 1024px) {
+  .col {
+    transform: rotate3d(0, 1, 0, 0deg) translateZ(0) scale(1);
+  }
+}
+
+.col:hover {
+  transform: rotate3d(0, 1, 0, 0deg) translateZ(0) scale(1);
 }
 
 .col h2 {

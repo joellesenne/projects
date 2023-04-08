@@ -52,10 +52,6 @@ Add additional notes about how to deploy this on a live system.
 - [Axios](https://axios-http.com/docs/intro) - Promise based HTTP client
 - [API Github](https://docs.github.com/en/rest) - GitHub REST API documentation
 
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
 ## Authors
 
 👤 **Joël Lesenne**
@@ -88,3 +84,4 @@ This project is [MIT](LICENSE) licensed.
 ## Acknowledgments
 - [Integrate Github Repositories (Vuejs)](https://medium.com/swlh/integrate-github-repositories-into-your-personal-site-with-vuejs-e08f7bb7877b)
 - [LekoArts - Gatsby status dashboard](https://github.com/LekoArts/gatsby-status-dashboard)
+- [Vanholtz - Inspiration transform3D](https://vanholtz.co/)
