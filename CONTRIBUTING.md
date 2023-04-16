@@ -8,7 +8,7 @@ First fork this project :
 
 ```bash
 
-- git clone <https://github.com/joellesenne/profils.git>
+- git clone <https://github.com/joellesenne/projects.git>
 
 - npm install
 
