@@ -14,8 +14,8 @@ dependencies:
 
 devDependencies:
   '@vitejs/plugin-vue':
-    specifier: ^5.0.2
-    version: 5.0.2(vite@5.0.10)(vue@3.4.4)
+    specifier: ^6.0.0
+    version: 6.0.8(vite@5.0.10)(vue@3.4.4)
   vite:
     specifier: ^5.0.10
     version: 5.0.10
@@ -255,6 +255,10 @@ packages:
   /@jridgewell/sourcemap-codec@1.4.15:
     resolution: {integrity: sha512-eF2rxCRulEKXHTRiDrDy6erMYWqNw4LPdQ8UQA4huuxaQsVeRPFl2oM8oDGxMFhJUWZf9McpLtJasDDZb/Bpeg==}
 
+  /@rolldown/pluginutils@1.0.1:
+    resolution: {integrity: sha512-2j9bGt5Jh8hj+vPtgzPtl72j0yRxHAyumoo6TNfAjsLB04UtpSvPbPcDcBMxz7n+9CYB0c1GxQFxYRg2jimqGw==}
+    dev: true
+
   /@rollup/rollup-android-arm-eabi@4.9.2:
     resolution: {integrity: sha512-RKzxFxBHq9ysZ83fn8Iduv3A283K7zPPYuhL/z9CQuyFrjwpErJx0h4aeb/bnJ+q29GRLgJpY66ceQ/Wcsn3wA==}
     cpu: [arm]
@@ -359,13 +363,14 @@ packages:
     dev: true
     optional: true
 
-  /@vitejs/plugin-vue@5.0.2(vite@5.0.10)(vue@3.4.4):
-    resolution: {integrity: sha512-kEjJHrLb5ePBvjD0SPZwJlw1QTRcjjCA9sB5VyfonoXVBxTS7TMnqL6EkLt1Eu61RDeiuZ/WN9Hf6PxXhPI2uA==}
-    engines: {node: ^18.0.0 || >=20.0.0}
+  /@vitejs/plugin-vue@6.0.8(vite@5.0.10)(vue@3.4.4):
+    resolution: {integrity: sha512-0ZjgOg7oO6farnNGup7yvoM/YXZV84OZxHAwtflItNa/6zzQyVb5LNxyea3FEKEX2XlagIKzrlH7wwxkKgtiew==}
+    engines: {node: ^20.19.0 || >=22.12.0}
     peerDependencies:
-      vite: ^5.0.0
+      vite: ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0
       vue: ^3.2.25
     dependencies:
+      '@rolldown/pluginutils': 1.0.1
       vite: 5.0.10
       vue: 3.4.4
     dev: true
